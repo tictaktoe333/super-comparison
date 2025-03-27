@@ -17,7 +17,7 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
     f1_hash = get_hash_from_filepath(args.f1, args.ignore_name)
-    f2_hash = get_hash_from_filepath(args.f1, args.ignore_name)
+    f2_hash = get_hash_from_filepath(args.f2, args.ignore_name)
     print(f"f1 hash: {f1_hash}")
     print(f"f2 hash: {f2_hash}")
     if f1_hash == f2_hash:
